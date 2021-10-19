@@ -1,0 +1,17 @@
+{
+  "name": "site-scanner",
+  "version": "1.0.0",
+  "description": "scans sites for 404s",
+  "main": "index.js",
+  "scripts": {
+    "site-scanner": "node src/crawler.mjs"
+  },
+  "author": "Joe Bond",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.23.0",
+    "fs": "^0.0.1-security",
+    "node-abort-controller": "^3.0.1",
+    "node-fetch": "^3.0.0"
+  }
+}
