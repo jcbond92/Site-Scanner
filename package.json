@@ -1,6 +1,6 @@
 {
   "name": "site-scanner",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "scans sites for 404s",
   "main": "index.js",
   "scripts": {
