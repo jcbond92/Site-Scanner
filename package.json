@@ -5,14 +5,23 @@
   "author": "Joe Bond",
   "main": "./src/index.js",
   "type": "module",
-  "license": "ISC",
+  "license": "MIT",
+  "jest": {
+    "testEnvironment": "node"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/jcbond92/caterpillar-crawl.git"
+  },
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage"
   },
   "dependencies": {
     "axios": "^0.23.0",
     "fs": "^0.0.1-security",
     "node-fetch": "^3.0.0"
+  },
+  "devDependencies": {
+    "jest": "^27.3.1"
   }
 }

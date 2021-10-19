@@ -3,25 +3,27 @@ import fetch from "node-fetch";
 import axios from "axios";
 
 export default function (config) {
+  const resultData = [];
+
   if (!config.url) {
     console.log(
       "No config.url provided. Add a link to a sitemap or webpage to grab links."
     );
-    return;
+    return false;
   }
-  const sitemap = config.url;
   if (!config.path) {
     console.log(
       "No config.path provided. Add a path to output your results to."
     );
-    return;
+    return false;
   }
-  const jsonOutputPath = config.path;
-  const resultData = [];
+  if (!writeJson(resultData)) {
+    return false;
+  }
 
   // get the sitemap from the path specified in the sitemap variable
   console.log("Fetching the links from the page provided...");
-  fetch(sitemap)
+  fetch(config.url)
     .then((response) => response.text())
     .then((text) => createSitemapArray(text))
     .catch((error) => console.log(error));
@@ -92,14 +94,14 @@ export default function (config) {
   };
 
   // write a json file with the results
-  const writeJson = (data) => {
+  function writeJson(data) {
     const fileData = JSON.stringify(data);
-    fs.writeFile(jsonOutputPath, fileData, (err) => {
+    fs.writeFile(config.path, fileData, (err) => {
       if (err) {
-        console.error(err);
+        console.error("Bad file path in config.path!", err);
       } else {
         console.log("Success! Your JSON has been file created.\n");
       }
     });
-  };
+  }
 }
