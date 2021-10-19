@@ -1,4 +1,4 @@
-import statusChecker from "../link-checker/app.js";
+import statusChecker from "../app.js";
 
 test("no url included", () => {
   const config = {
@@ -11,15 +11,6 @@ test("no url included", () => {
 test("no path included", () => {
   const config = {
     url: "https://www.google.com",
-  };
-
-  expect(statusChecker(config)).toBe(false);
-});
-
-test("bad file path", () => {
-  const config = {
-    url: "https://www.google.com",
-    path: "",
   };
 
   expect(statusChecker(config)).toBe(false);

@@ -30,7 +30,7 @@ import { statusChecker } from "caterpillar-crawl";
 
 const config = {
   url: "https://www.sitename.com/sitemap.xml",
-  path: ".examples/link-checker-results.json",
+  path: "./examples/results.json",
 };
 
 statusChecker(config);
