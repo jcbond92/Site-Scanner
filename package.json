@@ -1,12 +1,12 @@
 {
-  "name": "site-scanner",
+  "name": "caterpillar-crawl",
   "version": "0.1.0",
   "description": "Utility for scanning and testing websites",
   "author": "Joe Bond",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jcbond92/site-scanner.git"
+    "url": "https://github.com/jcbond92/caterpillar-crawl.git"
   },
   "dependencies": {
     "axios": "^0.23.0",
