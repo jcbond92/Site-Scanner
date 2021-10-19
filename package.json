@@ -1,13 +1,13 @@
 {
   "name": "site-scanner",
   "version": "0.1.0",
-  "description": "scans sites for 404s",
-  "main": "index.js",
-  "scripts": {
-    "site-scanner": "node src/crawler.mjs"
-  },
+  "description": "Utility for scanning and testing websites",
   "author": "Joe Bond",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jcbond92/site-scanner.git"
+  },
   "dependencies": {
     "axios": "^0.23.0",
     "fs": "^0.0.1-security",
