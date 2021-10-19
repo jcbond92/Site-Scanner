@@ -9,6 +9,10 @@
   "jest": {
     "testEnvironment": "node"
   },
+  "keywords": [
+    "crawler",
+    "testing"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/jcbond92/caterpillar-crawl.git"
