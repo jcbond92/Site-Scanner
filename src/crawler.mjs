@@ -37,7 +37,6 @@ const createSitemapArray = (sitemapString) => {
 
 const testUrl = (url) =>
   new Promise(function (resolve, reject) {
-    // Make a request for a user with a given ID
     axios
       .get(
         url,
