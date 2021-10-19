@@ -3,6 +3,8 @@
   "version": "0.1.1",
   "description": "Utility for scanning and testing websites",
   "author": "Joe Bond",
+  "main": "./src/index.js",
+  "type": "module",
   "license": "ISC",
   "repository": {
     "type": "git",

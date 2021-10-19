@@ -2,7 +2,7 @@ import fs, { write } from "fs";
 import fetch from "node-fetch";
 import axios from "axios";
 
-export default function statusChecker(config) {
+export default function (config) {
   if (!config.url) {
     console.log(
       "No config.url provided. Add a link to a sitemap or webpage to grab links."

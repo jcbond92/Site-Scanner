@@ -1,4 +1,4 @@
-import statusChecker from "../src/link-checker/app.mjs";
+import statusChecker from "../src/link-checker/app.js";
 
 const config = {
   url: "https://www.truist.com/wealth.index.xml",
