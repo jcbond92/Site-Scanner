@@ -9,4 +9,7 @@ export default {
     "^.+\\.(ts|tsx)$": "ts-jest",
     "^.+\\.js?$": "babel-jest",
   },
+  moduleNameMapper: {
+    "^(\\.{1,2}/.*)\\.js$": "$1",
+  },
 };

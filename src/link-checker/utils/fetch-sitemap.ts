@@ -1,5 +1,5 @@
 import axios from "axios";
-import getStatus from "./get-status";
+import getStatus from "./get-status.js";
 
 export default function (config: { url: string; test: boolean; }) {
   return new Promise(function (resolve, reject) {
