@@ -1,6 +1,6 @@
 {
   "name": "caterpillar-crawl",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Utility for scanning and testing websites",
   "author": "Joe Bond",
   "main": "./dist/index.js",
