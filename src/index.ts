@@ -1,2 +1,2 @@
-import statusChecker from "./link-checker/app.js";
+import statusChecker from './link-checker/app.js';
 export { statusChecker };
