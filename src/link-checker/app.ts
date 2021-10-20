@@ -1,4 +1,4 @@
-import fetchSitemap from "./utils/fetch-sitemap.js";
+import fetchSitemap from "./utils/fetch-sitemap";
 
 export default function (config: { url: string; path: string; test: boolean;}) {
   if (!config.url) {

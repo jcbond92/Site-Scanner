@@ -1,5 +1,4 @@
 import fetchSitemap from "../utils/fetch-sitemap";
-
 test("fetching and converting links successfully", async () => {
   const config = {
     url: "https://www.google.com",

@@ -1,5 +1,5 @@
 import axios from "axios";
-import writeFile from "./write-file.js";
+import writeFile from "./write-file";
 
 export default function (config: any, urls: any[]) {
   return new Promise(function (resolve, reject) {
