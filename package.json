@@ -3,12 +3,9 @@
   "version": "0.1.4",
   "description": "Utility for scanning and testing websites",
   "author": "Joe Bond",
-  "main": "./src/index.js",
+  "main": "./.build/index.js",
   "type": "module",
   "license": "MIT",
-  "jest": {
-    "testEnvironment": "node"
-  },
   "keywords": [
     "crawler",
     "testing"
@@ -18,7 +15,15 @@
     "url": "https://github.com/jcbond92/caterpillar-crawl.git"
   },
   "scripts": {
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "npm run type-check -- --watch",
+    "build": "npm run build:types && npm run build:js",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build:js": "babel src --out-dir .build --extensions \".ts,.tsx\" --source-maps inline",
+    "format": "prettier --write ./src/**/*.{,ts,js} ./*.{ts,js}",
+    "lint": "eslint ./src/**/*.{ts,js} --ignore-path .gitignore .",
+    "lint:fix": "eslint --fix ./src/**/*.{ts,js} --ignore-path .gitignore ."
   },
   "dependencies": {
     "axios": "^0.23.0",
@@ -26,6 +31,20 @@
     "node-fetch": "^3.0.0"
   },
   "devDependencies": {
-    "jest": "^27.3.1"
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.8",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/preset-typescript": "^7.15.0",
+    "@types/jest": "^27.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.1.0",
+    "@typescript-eslint/parser": "^5.1.0",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.3.0",
+    "jest": "^27.3.1",
+    "prettier": "^2.4.1",
+    "ts-jest": "^27.0.7",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.4"
   }
 }

@@ -1,6 +1,6 @@
 import fs, { write } from "fs";
 
-export default function (config, data) {
+export default function (config: { path: string, test: boolean }, data: any) {
   return new Promise(function (resolve, reject) {
     const fileData = JSON.stringify(data);
     fs.writeFile(config.path, fileData, (err) => {

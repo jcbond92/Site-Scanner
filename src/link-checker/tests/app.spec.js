@@ -1,4 +1,4 @@
-import statusChecker from "../app.js";
+import statusChecker from "../app";
 
 test("no url included", () => {
   const config = {
