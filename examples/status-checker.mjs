@@ -1,5 +1,5 @@
 // node ./examples/status-checker.mjs
-import { statusChecker } from "../.build/index.js";
+import { statusChecker } from "../dist/index.js";
 
 const config = {
   url: "https://www.google.com",
