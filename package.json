@@ -15,7 +15,7 @@
     "url": "https://github.com/jcbond92/caterpillar-crawl.git"
   },
   "scripts": {
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",
+    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js --coverage",
     "type-check": "tsc --noEmit",
     "type-check:watch": "npm run type-check -- --watch",
     "build": "npm run build:types && npm run build:js",
