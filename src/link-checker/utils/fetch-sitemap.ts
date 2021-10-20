@@ -30,7 +30,7 @@ export default function (config: { url: string; test: boolean }) {
             const filterTest = (string: string) => filterRegex.test(string);
 
             const urlArray = sitemapString.match(urlRegex) || [];
-            let filteredUrlArray = urlArray.filter(
+            const filteredUrlArray = urlArray.filter(
                 (item: string) => !filterTest(item)
             );
             if (config.test) resolve(filteredUrlArray);
