@@ -27,8 +27,7 @@
   },
   "dependencies": {
     "axios": "^0.23.0",
-    "fs": "^0.0.1-security",
-    "node-fetch": "^3.0.0"
+    "fs": "^0.0.1-security"
   },
   "devDependencies": {
     "@babel/cli": "^7.15.7",
@@ -42,6 +41,7 @@
     "@typescript-eslint/parser": "^5.1.0",
     "eslint": "^8.0.1",
     "eslint-config-prettier": "^8.3.0",
+    "jest": "^27.3.1",
     "prettier": "^2.4.1",
     "ts-jest": "^27.0.7",
     "tslib": "^2.3.1",
